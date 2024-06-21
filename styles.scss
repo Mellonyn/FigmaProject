@@ -10,6 +10,9 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Lato", sans-serif;
+  h1 {
+    font-size: 36px;
+  }
 }
 .head {
   width: 1920px;
@@ -149,7 +152,7 @@ body {
   }
   .cards {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     position: relative;
     left: 25%;
     gap: 20px;
@@ -173,87 +176,165 @@ body {
     margin-top: 10px;
   }
 }
-.btninfo{
+.btninfo {
   color: #ed4c5c;
-      margin-top: 15px;
-      border: none;
-      background: transparent;
+  margin-top: 15px;
+  border: none;
+  background: transparent;
 }
-.technology{
+.technology {
   width: 1440px;
   height: 500px;
-.heading{
-  text-align: center;
-  margin-left: 30%;
-}
-.downloadlist{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  position: relative;
-  top: 10%;
-  left: 30%;
-  gap: 30px;
-  font-size: 18px;
-  align-items: baseline;
-  font-weight: bold;
-  &_text{
+  .heading {
     text-align: center;
+    margin-left: 30%;
+  }
+  .downloadlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     position: relative;
-    right: 40%;
-    &_span{
-      margin-top: 10px;
-      font-size: 12px;
-      width: 200px;
-      margin-left: 20%;
+    top: 10%;
+    left: 30%;
+    gap: 30px;
+    font-size: 18px;
+    align-items: baseline;
+    font-weight: bold;
+    &_text {
+      text-align: center;
+      position: relative;
+      right: 40%;
+      &_span {
+        margin-top: 10px;
+        font-size: 12px;
+        width: 200px;
+        margin-left: 20%;
+      }
     }
   }
 }
-}
-button:hover{
+button:hover {
   transform: scale(1.1);
 }
-.apps{
+.apps {
   width: 1920px;
   height: 500px;
-  &_container{
+  &_container {
     width: 95%;
     height: 600px;
-    background-color: #ED4C5C;
+    background-color: #ed4c5c;
     margin-left: 6%;
-    #img1{
+    #img1 {
       position: relative;
       left: 50%;
       top: 30%;
       z-index: 10;
     }
-    #img2{
+    #img2 {
       position: relative;
       left: 23%;
       top: 25%;
       z-index: 1;
     }
-    #img3{
+    #img3 {
       position: relative;
       left: 10%;
       top: 25%;
       z-index: 1;
     }
-    &_for{
+    &_for {
       position: relative;
       bottom: 17%;
       left: 15%;
       font-size: 36px;
       color: #fff;
-      &_text{
+      width: 500px;
+      &_text {
         margin-top: 50px;
         font-size: 14px;
         width: 445px;
-        &_app{
+        &_app {
           display: flex;
           margin-left: 14.8%;
           gap: 23px;
         }
       }
+    }
+  }
+}
+.contact {
+  width: 1440px;
+  height: 500px;
+  margin-top: 6%;
+  &_text {
+    position: relative;
+    left: 27%;
+    top: 20%;
+    &_input {
+      position: relative;
+      left: 70%;
+      width: 600px;
+      #inp1 {
+        width: 255px;
+        height: 60px;
+        border-radius: 6px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        right: 5%;
+      }
+      #inp2 {
+        width: 545px;
+        height: 60px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+      }
+      input::placeholder {
+        font-size: 16px;
+        line-height: 19.2px;
+        text-align: left;
+        padding-left: 31px;
+      }
+    }
+  }
+  h1 {
+    margin-bottom: 5%;
+  }
+  #btn{
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    color: #ffffff;
+    border: none;
+    border: 1.5px solid #ED4C5C;
+    background-color: #ED4C5C ;
+    position: relative;
+    left: 70%;
+  }
+}
+.footer{
+  width: 1440px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10%;
+  margin-top: 10%;
+  &_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left: 100%;
+    ul{
+      margin-bottom: 141px;
+      list-style-type: none;
+      li{
+        margin-bottom: 10px;
+      }
+    }
+    #vector_img{
+    display: flex;
+    gap: 12px;
+      
     }
   }
 }
